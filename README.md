@@ -1,64 +1,57 @@
-# ROUTE-AI
+# ROUTE AI - Smart Data Cleaner 🚀
 
-AI-powered data cleaning platform for automated preprocessing, profiling, cleaning, and export workflows.
+**ROUTE AI** هي منصة ذكية متكاملة مصممة لتنظيف البيانات، تحليلها، وتجهيزها بخطوات واضحة وسريعة. تهدف المنصة إلى تحويل البيانات الخام "المتسخة" إلى بيانات نقية وجاهزة للتحليل أو التعلم الآلي، مما يوفر ساعات من العمل اليدوي الشاق.
 
-## Project structure
+---
 
-- `backend/`: FastAPI + pandas + scikit-learn services
-- `frontend/`: React + Vite dashboard
+## 📸 نظرة شاملة على المنصة (Preview)
 
-## Backend
+### 1. واجهة الهبوط (Landing Page)
+أول ما يراه المستخدم، تصميم عصري (Dark Mode) يرحب بك في "ROUTE AI" حيث الدقة والذكاء والاحترافية.
+![1. Welcome Screen](assets/screenshot_1.jpg)
 
-```bash
-cd backend
-py -3.13 -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload
-```
+### 2. لوحة التحكم ورفع الملفات (Dashboard & Upload)
+هنا تبدأ الرحلة؛ دعم كامل لرفع ملفات CSV و Excel عبر السحب والإفلات، مع عرض مميزات النظام (التحليل التلقائي، التنظيف الذكي، تصدير التقارير).
+![2. Upload Section](assets/screenshot_2.jpg)
 
-## Frontend
+### 3. تخصيص وضع التنظيف (Cleaning Mode Selection)
+القدرة على الاختيار بين التنظيف التلقائي بالكامل (Auto) بالاعتماد على خوارزميات النظام، أو التحكم اليدوي التفصيلي (Manual) للتخصيص الدقيق.
+![3. Mode Selection](assets/screenshot_3.jpg)
 
-```bash
-cd frontend
-npm install
-npm run dev
-```
+### 4. إحصائيات ما قبل التنظيف (Preprocessing Statistics)
+عرض فوري لإحصائيات الملف المرفوع: عدد الصفوف، الأعمدة، التكرارات، والقيم المفقودة (Missing Data). في هذا المثال، نرى أكثر من 1200 قيمة مفقودة!
+![4. Data Stats Before Cleaning](assets/screenshot_4.jpg)
 
-## Single-app local run
+### 5. التحكم اليدوي المتقدم (Advanced Manual Cleaning)
+واجهة تفصيلية تسمح بـ:
+- معالجة القيم المفقودة (Mean, Median, Mode).
+- إزالة التكرارات والقيم الشاذة (Outliers).
+- ترميز النصوص وتحجيم الأرقام.
+- اختيار العمود الهدف (Target Column) وحذف الأعمدة غير الضرورية.
+![5. Manual Settings](assets/screenshot_5.jpg)
 
-Setup first:
+### 6. حفظ الإعدادات وفلترة الصفوف (Save Presets & Filtering)
+ميزة فريدة لحفظ إعدادات التنظيف اليدوي وتطبيقها على ملفات أخرى مستقبلاً بضغطة واحدة، بالإضافة إلى إمكانية إضافة شروط مخصصة لفلترة الصفوف.
+![6. Save Settings & Filters](assets/screenshot_6.jpg)
 
-```powershell
-cd "C:\Users\pvp_pc\OneDrive\سطح المكتب\ROUTE AI"
-.\Setup-App.ps1
-```
+### 7. المعاينة والنتائج النهائية (Preview & Final Results)
+عرض البيانات قبل وبعد التنظيف لضمان الدقة، مع إحصائيات نهائية تُظهر تصفير التكرارات والقيم المفقودة بنجاح!
+![7. Final Preview & Statistics](assets/screenshot_7.jpg)
 
-Build the frontend once, then run the backend which will serve the built UI and API together:
+---
 
-```powershell
-cd "C:\Users\pvp_pc\OneDrive\سطح المكتب\ROUTE AI"
-.\Start-App.ps1 -BuildFrontend
-```
+## ✨ المميزات الرئيسية
+- **Smart Cleansing:** خوارزميات ذكية للتعرف على أنواع البيانات ومعالجتها.
+- **Save Presets:** إمكانية حفظ إعداداتك اليدوية وتطبيقها على ملفات أخرى مستقبلاً.
+- **Real-time Analytics:** عرض فوري لإحصائيات البيانات (Rows, Columns, Missing Data).
+- **One-Click Execution:** تشغيل النظام بالكامل عبر سكريبتات PowerShell مؤتمتة.
 
-After that, open:
+---
 
-```text
-http://127.0.0.1:8000
-```
+## 🚀 طريقة التشغيل (Setup & Run)
 
-For later runs, if you did not change the frontend and only want to start the app again:
+المشروع مجهز بسكريبتات لتسهيل العمل دون الحاجة لكتابة أوامر Python معقدة:
 
-```powershell
-.\Start-App.ps1
-```
-
-## Current scope
-
-- CSV / Excel upload
-- Automatic profiling
-- Smart alerts and suggestions
-- Auto clean pipeline
-- Manual actions payload contract
-- Before / after preview
-- Export-ready response contracts
+1. **للتأسيس (أول مرة فقط):**
+   ```powershell
+   .\Setup-App.ps1
