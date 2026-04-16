@@ -48,10 +48,3 @@ Side-by-side comparison of data before and after cleaning, showing a successful 
 
 ---
 
-## 🚀 Setup & Run
-
-The project is equipped with automation scripts to bypass complex Python commands:
-
-1. **First-Time Setup:**
-   ```powershell
-   .\Setup-App.ps1
