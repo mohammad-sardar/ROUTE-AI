@@ -1,57 +1,57 @@
 # ROUTE AI - Smart Data Cleaner 🚀
 
-**ROUTE AI** هي منصة ذكية متكاملة مصممة لتنظيف البيانات، تحليلها، وتجهيزها بخطوات واضحة وسريعة. تهدف المنصة إلى تحويل البيانات الخام "المتسخة" إلى بيانات نقية وجاهزة للتحليل أو التعلم الآلي، مما يوفر ساعات من العمل اليدوي الشاق.
+**ROUTE AI** is a comprehensive, intelligent platform designed for automated data cleaning, analysis, and preparation. It transforms "dirty" raw datasets into clean, analysis-ready data for machine learning and business intelligence, saving hours of tedious manual labor.
 
 ---
 
-## 📸 نظرة شاملة على المنصة (Preview)
+## 📸 Platform Overview (Preview)
 
-### 1. واجهة الهبوط (Landing Page)
-أول ما يراه المستخدم، تصميم عصري (Dark Mode) يرحب بك في "ROUTE AI" حيث الدقة والذكاء والاحترافية.
+### 1. Landing Page
+A modern, dark-mode interface designed to provide a professional and seamless user experience.
 ![1. Welcome Screen](assets/screenshot_1.jpg)
 
-### 2. لوحة التحكم ورفع الملفات (Dashboard & Upload)
-هنا تبدأ الرحلة؛ دعم كامل لرفع ملفات CSV و Excel عبر السحب والإفلات، مع عرض مميزات النظام (التحليل التلقائي، التنظيف الذكي، تصدير التقارير).
+### 2. Dashboard & File Upload
+Full support for CSV and Excel files with drag-and-drop functionality, highlighting core features like auto-analysis and smart cleansing.
 ![2. Upload Section](assets/screenshot_2.jpg)
 
-### 3. تخصيص وضع التنظيف (Cleaning Mode Selection)
-القدرة على الاختيار بين التنظيف التلقائي بالكامل (Auto) بالاعتماد على خوارزميات النظام، أو التحكم اليدوي التفصيلي (Manual) للتخصيص الدقيق.
+### 3. Cleaning Mode Selection
+Users can choose between **Full Auto-Clean**, powered by system algorithms, or **Manual Mode** for granular control.
 ![3. Mode Selection](assets/screenshot_3.jpg)
 
-### 4. إحصائيات ما قبل التنظيف (Preprocessing Statistics)
-عرض فوري لإحصائيات الملف المرفوع: عدد الصفوف، الأعمدة، التكرارات، والقيم المفقودة (Missing Data). في هذا المثال، نرى أكثر من 1200 قيمة مفقودة!
+### 4. Preprocessing Statistics
+Real-time display of dataset health, including row/column counts, duplicates, and missing data detection (e.g., detecting 1200+ missing values instantly).
 ![4. Data Stats Before Cleaning](assets/screenshot_4.jpg)
 
-### 5. التحكم اليدوي المتقدم (Advanced Manual Cleaning)
-واجهة تفصيلية تسمح بـ:
-- معالجة القيم المفقودة (Mean, Median, Mode).
-- إزالة التكرارات والقيم الشاذة (Outliers).
-- ترميز النصوص وتحجيم الأرقام.
-- اختيار العمود الهدف (Target Column) وحذف الأعمدة غير الضرورية.
+### 5. Advanced Manual Cleaning
+A detailed interface for professional data handling:
+- **Missing Data:** Impute using Mean, Median, or Mode.
+- **Outliers:** Detect and remove anomalous data points.
+- **Encoding:** Handle categorical text and numerical scaling.
+- **Target Selection:** Define target columns and drop unnecessary features.
 ![5. Manual Settings](assets/screenshot_5.jpg)
 
-### 6. حفظ الإعدادات وفلترة الصفوف (Save Presets & Filtering)
-ميزة فريدة لحفظ إعدادات التنظيف اليدوي وتطبيقها على ملفات أخرى مستقبلاً بضغطة واحدة، بالإضافة إلى إمكانية إضافة شروط مخصصة لفلترة الصفوف.
+### 6. Save Presets & Row Filtering
+Unique feature to save manual configurations as presets for future use, alongside custom conditional filtering for rows.
 ![6. Save Settings & Filters](assets/screenshot_6.jpg)
 
-### 7. المعاينة والنتائج النهائية (Preview & Final Results)
-عرض البيانات قبل وبعد التنظيف لضمان الدقة، مع إحصائيات نهائية تُظهر تصفير التكرارات والقيم المفقودة بنجاح!
+### 7. Final Preview & Results
+Side-by-side comparison of data before and after cleaning, showing a successful 0% missing/duplicate rate.
 ![7. Final Preview & Statistics](assets/screenshot_7.jpg)
 
 ---
 
-## ✨ المميزات الرئيسية
-- **Smart Cleansing:** خوارزميات ذكية للتعرف على أنواع البيانات ومعالجتها.
-- **Save Presets:** إمكانية حفظ إعداداتك اليدوية وتطبيقها على ملفات أخرى مستقبلاً.
-- **Real-time Analytics:** عرض فوري لإحصائيات البيانات (Rows, Columns, Missing Data).
-- **One-Click Execution:** تشغيل النظام بالكامل عبر سكريبتات PowerShell مؤتمتة.
+## ✨ Key Features
+- **Smart Cleansing:** Intelligent algorithms for automated data type detection and treatment.
+- **Save Presets:** Save your manual workflow and apply it to other files with one click.
+- **Real-time Analytics:** Instant insights into data structure and quality.
+- **One-Click Execution:** Fully automated deployment using PowerShell scripts.
 
 ---
 
-## 🚀 طريقة التشغيل (Setup & Run)
+## 🚀 Setup & Run
 
-المشروع مجهز بسكريبتات لتسهيل العمل دون الحاجة لكتابة أوامر Python معقدة:
+The project is equipped with automation scripts to bypass complex Python commands:
 
-1. **للتأسيس (أول مرة فقط):**
+1. **First-Time Setup:**
    ```powershell
    .\Setup-App.ps1
