@@ -49,3 +49,13 @@ Side-by-side comparison of data before and after cleaning, showing a successful 
 
 ---
 
+> [!IMPORTANT]
+> **Environment Note:** This project is currently configured and optimized for **Localhost execution**. 
+> Due to the complex architectural dependencies, large dataset handling, and integrated AI cleansing modules, the system is designed to run within a dedicated local development environment rather than a live web demo.
+
+### 🛠️ How to Run Locally
+To ensure the application runs with its full suite of features (AI processing, data cleansing, and UI transitions), please follow these steps:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone [https://github.com/your-username/ROUTE-AI.git](https://github.com/your-username/ROUTE-AI.git)
