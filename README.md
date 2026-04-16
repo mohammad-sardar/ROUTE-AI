@@ -34,10 +34,11 @@ A detailed interface for professional data handling:
 Unique feature to save manual configurations as presets for future use, alongside custom conditional filtering for rows.
 ![6. Save Settings & Filters](assets/screenshot_6.png)
 
-### 7. Final Preview & Results
-Side-by-side comparison of data before and after cleaning, showing a successful 0% missing/duplicate rate.
-![7. Final Preview & Statistics](assets/screenshot_7.png)
+### 7. Final Preview, Results, & Execution Flow
+Side-by-side comparison of data before and after cleaning, showing a successful 0% missing/duplicate rate, alongside a view of the automated system startup process.
 
+![7. Final Preview & Statistics](assets/screenshot_7.png)
+![9. Automation Script](assets/screenshot_9.png)
 ---
 
 ## ✨ Key Features
